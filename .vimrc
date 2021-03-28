@@ -8,3 +8,4 @@ set hlsearch
 set ruler
 
 colorscheme minimalist
+filetype plugin indent on
