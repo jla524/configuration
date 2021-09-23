@@ -6,4 +6,3 @@ set ai
 set number
 set hlsearch
 set ruler
-colorscheme minimalist
