@@ -4,7 +4,6 @@ Plug 'ycm-core/YouCompleteMe'
 Plug 'kyazdani42/nvim-web-devicons'
 call plug#end()
 
-
 syntax enable
 set tabstop=4
 set shiftwidth=4
