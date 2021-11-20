@@ -1,7 +1,5 @@
 call plug#begin('~/.local/share/nvim/plugged')
-Plug 'mfussenegger/nvim-lint'
-Plug 'ycm-core/YouCompleteMe'
-Plug 'kyazdani42/nvim-web-devicons'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 syntax enable
