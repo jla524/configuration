@@ -1,3 +1,0 @@
-alias ls='ls -G'
-export PS1='\u@\h:\[\e[32m\]\w\[\e[0m\]\$ '
-export PATH="$HOME/.poetry/bin:$PATH"
