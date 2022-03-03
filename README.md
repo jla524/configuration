@@ -26,6 +26,6 @@ My config will always be below 33 lines. If it isn't, I will remove a few lines.
 [ALE plugin][2]
 
 
-[0]: https://www.quora.com/What-are-swap-files-in-vim-and-how-to-deal-with-them
+[0]: https://vi.stackexchange.com/questions/177/what-is-the-purpose-of-swap-files
 [1]: https://github.com/geohot/configuration
 [2]: https://github.com/dense-analysis/ale
