@@ -21,9 +21,9 @@ My config will always be below 33 lines. If it isn't, I will remove a few lines.
 
 [Geohot config][1]
 
-[ALE plugin][2]
+[WakaTime for Vim][2]
 
 
 [0]: https://vi.stackexchange.com/questions/177/what-is-the-purpose-of-swap-files
 [1]: https://github.com/geohot/configuration
-[2]: https://github.com/dense-analysis/ale
+[2]: https://wakatime.com/vim
