@@ -6,13 +6,11 @@ My config files for zsh + tmux + vim.
 
 Create a directory to store [swap files][0] by running `mkdir -p ~/.vim/swapfiles/`.
 
-## Install ALE (optional)
-
-#### on Unix
+## Install WakaTime (optional)
 
 ```
 mkdir -p ~/.vim/pack/git-plugins/start
-git clone --depth 1 https://github.com/dense-analysis/ale.git ~/.vim/pack/git-plugins/start/ale
+git clone https://github.com/wakatime/vim-wakatime.git ~/.vim/pack/git-plugins/start/wakatime
 ```
 
 ## The promise of small
