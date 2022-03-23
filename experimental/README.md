@@ -50,6 +50,12 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 # Run :PlugInstall in neovim
 ```
 
+3. Install jedi
+
+```
+pip install jedi
+```
+
 
 [1]: https://fishshell.com
 [2]: https://starship.rs
