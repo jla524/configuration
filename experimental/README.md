@@ -27,6 +27,13 @@ brew install --cask font-hack-nerd-font
 # Change font family in Terminal -> Preferences -> Profiles
 ```
 
+4. Change the default shell in ~/.tmux.conf
+
+```
+# Replace the last line with "set-option -g default-shell /usr/local/bin/fish"
+killall tmux
+```
+
 
 [1]: https://fishshell.com
 [2]: https://starship.rs
