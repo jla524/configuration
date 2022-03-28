@@ -1,29 +1,65 @@
 # Configuration
 
-My config files for zsh + tmux + vim.
+My config files for  [fish][1], [starship][2], [tmux][3], and [neovim][4].
 
-## Setup
+## Fish + Starship Setup
 
-Create a directory to store [swap files][0] by running `mkdir -p ~/.vim/swapfiles/`.
-
-## Install WakaTime (optional)
+1. Install fish and change shell
 
 ```
-mkdir -p ~/.vim/pack/git-plugins/start
-git clone https://github.com/wakatime/vim-wakatime.git ~/.vim/pack/git-plugins/start/wakatime
+brew install fish
+echo $(which fish) | sudo tee -a /etc/shells
+chsh -s $(which fish)
 ```
 
-## The promise of small
+2. Install starship and add init script
 
-My config will always be below 33 lines. If it isn't, I will remove a few lines.
+```
+brew install starship
+echo "starship init fish | source" >> ~/.config/fish/config.fish
+```
 
-## References
+3. Install and switch to [nerd fonts][5]
 
-[Geohot config][1]
+```
+brew tap homebrew/cask-fonts
+brew install --cask font-hack-nerd-font
+# Change font family in Terminal -> Preferences -> Profiles
+```
 
-[WakaTime for Vim][2]
+4. Change the default shell in ~/.tmux.conf
+
+```
+# Replace the last line with "set-option -g default-shell /usr/local/bin/fish"
+killall tmux
+```
+
+## Neovim Setup
+
+1. Install neovim and [vim-plug][6]
+
+```
+brew install neovim
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+```
+
+2. Install plugins
+
+```
+# Run :PlugInstall in neovim
+```
+
+3. Install jedi
+
+```
+pip install jedi
+```
 
 
-[0]: https://vi.stackexchange.com/questions/177/what-is-the-purpose-of-swap-files
-[1]: https://github.com/geohot/configuration
-[2]: https://wakatime.com/vim
+[1]: https://fishshell.com
+[2]: https://starship.rs
+[3]: https://github.com/tmux/tmux/wiki
+[4]: https://neovim.io
+[5]: https://github.com/ryanoasis/nerd-fonts
+[6]: https://github.com/junegunn/vim-plug
