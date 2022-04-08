@@ -12,11 +12,10 @@ echo $(which fish) | sudo tee -a /etc/shells
 chsh -s $(which fish)
 ```
 
-2. Install starship and add init script
+2. Install starship
 
 ```
 brew install starship
-echo "starship init fish | source" >> ~/.config/fish/config.fish
 ```
 
 3. Install and switch to [nerd fonts][4]
@@ -29,23 +28,23 @@ brew install --cask font-hack-nerd-font
 
 ## Neovim Setup
 
-1. Install neovim and [vim-plug][5]
+1. Install neovim 
 
 ```
 brew install neovim
+```
+
+2. Install [vim-plug][5]
+
+```
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
 
-2. Install plugins
+3. Install plugins and [jedi][6]
 
 ```
-# Run :PlugInstall in neovim
-```
-
-3. Install [jedi][6]
-
-```
+nvim +'PlugInstall --sync' +qa
 pip install jedi
 ```
 
