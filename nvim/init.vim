@@ -2,6 +2,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dense-analysis/ale'
 Plug 'voldikss/vim-floaterm'
+Plug 'wakatime/vim-wakatime'
 call plug#end()
 
 syntax enable
@@ -13,4 +14,5 @@ colorscheme minimalist
 map <leader>t :ALEToggle<CR>
 map <leader>n :FloatermNew<CR>
 map <leader>s :FloatermShow<CR>
+nnoremap ` <C-w>
 tnoremap <Esc> <C-\><C-n>
