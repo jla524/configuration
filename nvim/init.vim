@@ -1,6 +1,6 @@
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'dense-analysis/ale'
+Plug 'mfussenegger/nvim-lint'
 Plug 'voldikss/vim-floaterm'
 Plug 'wakatime/vim-wakatime'
 call plug#end()
