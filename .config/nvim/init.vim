@@ -3,6 +3,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mfussenegger/nvim-lint'
 Plug 'voldikss/vim-floaterm'
 Plug 'wakatime/vim-wakatime'
+Plug 'pangloss/vim-javascript'
 call plug#end()
 
 syntax enable
