@@ -15,5 +15,7 @@ colorscheme minimalist
 map <leader>t :ALEToggle<CR>
 map <leader>n :FloatermNew<CR>
 map <leader>s :FloatermShow<CR>
+map <leader>f :FloatermFirst<CR>
+map <leader>l :FloatermLast<CR>
 nnoremap ` <C-w>
 tnoremap <Esc> <C-\><C-n>
