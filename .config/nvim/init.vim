@@ -4,6 +4,7 @@ Plug 'mfussenegger/nvim-lint'
 Plug 'voldikss/vim-floaterm'
 Plug 'wakatime/vim-wakatime'
 Plug 'pangloss/vim-javascript'
+Plug 'Vimjas/vim-python-pep8-indent'
 call plug#end()
 
 syntax enable
@@ -13,9 +14,6 @@ set shiftwidth=4
 colorscheme minimalist
 
 map <leader>n :FloatermNew<CR>
-map <leader>k :FloatermKill<CR>
 map <leader>s :FloatermShow<CR>
-map <leader>p :FloatermPrev<CR>
-map <leader>o :FloatermNext<CR>
 nnoremap ` <C-w>
 tnoremap <Esc> <C-\><C-n>
