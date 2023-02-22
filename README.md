@@ -1,6 +1,6 @@
 # Configuration
 
-My config files for [fish][1], [starship][2], and [neovim][3].
+My config files for [fish][1], [starship][2], and [vim][3].
 
 ## Fish + Starship Setup
 
@@ -26,32 +26,7 @@ brew install --cask font-hack-nerd-font
 # Change font family in Terminal -> Preferences -> Profiles
 ```
 
-## Neovim Setup
-
-1. Install neovim 
-
-```
-brew install neovim
-```
-
-2. Install [vim-plug][5]
-
-```
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-```
-
-3. Install plugins and [jedi][6]
-
-```
-nvim +'PlugInstall --sync' +qa
-pip install jedi
-```
-
-
 [1]: https://fishshell.com
 [2]: https://starship.rs
-[3]: https://neovim.io
+[3]: https://www.vim.org
 [4]: https://github.com/ryanoasis/nerd-fonts
-[5]: https://github.com/junegunn/vim-plug
-[6]: https://pypi.org/project/jedi
