@@ -1,3 +1,3 @@
 # Configuration
 
-My config files for zsh, tmux, and vim.
+My config files for tmux, vim, and zsh.
